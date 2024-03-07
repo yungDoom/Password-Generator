@@ -40,4 +40,4 @@ for i in range(length):
      
     password.append(randomcharacter)
  
-print("Your random password is " + "".join(password))
+print("Your random password is: " + "".join(password))
