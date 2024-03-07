@@ -1,7 +1,7 @@
 import string
 import random
  
-length = int(input("Enter password length: "))
+charlength = int(input("Enter password length: "))
  
 print('''
 Choose character set for password from here : 
@@ -11,16 +11,16 @@ Choose character set for password from here :
          4. Exit/Leave or see the results
 ''')
  
-charactersetList = ""
+charList = ""
  
 while(True):
     choice = int(input("Pick a number "))
     if(choice == 1):
-        charactersetList += string.ascii_letters
+        charList += string.ascii_letters
     elif(choice == 2):
-        charactersetList += string.digits
+        charList += string.digits
     elif(choice == 3):
-        charactersetList += string.punctuation
+        charList += string.punctuation
     elif(choice == 4):
         break
     else:
@@ -28,8 +28,8 @@ while(True):
  
 password = []
  
-for i in range(length):
-    randomcharacter = random.choice(charactersetList)
-    password.append(randomcharacter)
+for i in range(charlength):
+    randchar = random.choice(charList)
+    password.append(randchar)
  
 print("Your random password is " + "".join(password))
