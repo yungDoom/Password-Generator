@@ -1,5 +1,5 @@
-# Password-Generator-NEW
-*Password Generator Written in Python 3 But Improved!*
+# Password-Generator
+*Password Generator Written in Python 3 and with Improved Features!*
 <br>
 Launch, set the password length, Select characters and get your strong password!
 
